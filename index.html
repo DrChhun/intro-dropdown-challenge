@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -17,43 +18,42 @@
 </head>
 <body>
 
-  <div class="head">
-    <img src="images/logo.svg" alt="">
-    <div class="nav">
-      <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ul>
+  <div class="main">
 
-      <div class="nav__login">
-        <p><a href="">Login</a></p>
-        <button>Register</button>
+    <div class="nav flex justify-between md:px-20 md:my-10">
+      <div class="left flex">
+        <img class="mr-10 m-auto" src="images/logo.svg" alt="">
+        <p class=" text-slate-500 font-medium m-auto hover:text-black flex"> <a href="">Features</a> <img class="h-full m-auto ml-2" src="images/icon-arrow-down.svg" alt=""> </p>
+        <p class=" text-slate-500 font-medium ml-5 m-auto hover:text-black flex"> <a href="">Company</a> <img class="h-full m-auto ml-2" src="images/icon-arrow-down.svg" alt=""> </p>
+        <p class=" text-slate-500 font-medium ml-5 m-auto hover:text-black"> <a href="">Careers</a> </p>
+        <p class=" text-slate-500 font-medium ml-5 m-auto hover:text-black"> <a href="">About</a> </p>
+      </div>
+      <div class="right flex">
+        <p class=" text-slate-500 font-medium mr-5 m-auto hover:text-black"> <a href="">Login</a> </p>
+        <button class=" text-slate-500 font-medium px-6 py-2 rounded-xl border-2 hover:text-black hover:border-black duration-200">Register</button>
       </div>
     </div>
+
+    <div class="page flex md:p-20 h-screen">
+      <div class="page__txt h-auto w-1/2">
+        <h1 class="text-8xl font-bold mt-20">Make remote work</h1>
+        <p class="text-xl text-slate-500 mt-10">Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+        <button class="px-10 py-4 bg-black text-white font-medium rounded-xl mt-10 hover:bg-transparent hover:text-black hover:font-mediu hover:border-2  hover:border-black duration-200">Learn more</button>
+        <div class="page__txt__partner flex h-8 mt-20">
+          <img src="images/client-databiz.svg" alt="">
+          <img class="ml-5" src="images/client-audiophile.svg" alt="">
+          <img class="ml-5" src="images/client-maker.svg" alt="">
+          <img class="ml-5" src="images/client-meet.svg" alt="">
+        </div>
+      </div>
+      <div class="page__img w-1/2">
+        <img class="h-full m-auto img__pc" src="images/image-hero-desktop.png" alt="">
+        <img class="img__mobile" src="images/image-hero-mobile.png" alt="">
+      </div>
+    </div>
+
   </div>
 
-
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
