@@ -92,6 +92,10 @@
         height: 1.5rem;
     }
 
+    .page__txt__partner img {
+        height: 25px;
+    }
+
     .page__txt,
     .page__img {
         width: 100%;
