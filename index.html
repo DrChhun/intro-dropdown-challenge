@@ -7,6 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.4/dist/flowbite.min.css" />
+  <script src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"></script>
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -22,11 +24,41 @@
 
     <div class="nav flex justify-between md:px-20 md:my-10">
       <div class="left flex">
-        <img class="mr-10 m-auto" src="images/logo.svg" alt="">
-        <p class=" text-slate-500 font-medium m-auto hover:text-black flex"> <a href="">Features</a> <img class="h-full m-auto ml-2" src="images/icon-arrow-down.svg" alt=""> </p>
-        <p class=" text-slate-500 font-medium ml-5 m-auto hover:text-black flex"> <a href="">Company</a> <img class="h-full m-auto ml-2" src="images/icon-arrow-down.svg" alt=""> </p>
-        <p class=" text-slate-500 font-medium ml-5 m-auto hover:text-black"> <a href="">Careers</a> </p>
-        <p class=" text-slate-500 font-medium ml-5 m-auto hover:text-black"> <a href="">About</a> </p>
+        <img class="mr-20 m-auto" src="images/logo.svg" alt="">
+        <!-- dropdown one -->
+        <div class="dropdown flex">
+          <div class="drop-btn flex">
+            <p>Feature</p>
+            <img class="h-2 m-auto" src="images/icon-arrow-down.svg" alt="">
+          </div>
+          <div class="drop-content shadow-xl">
+            <a class="flex" href=""><img class="h-full mr-5" src="images/icon-calendar.svg" alt=""> Calender</a>
+            <a class="flex" href=""><img class="h-full mr-5" src="images/icon-reminders.svg" alt=""> Reminders</a>
+            <a class="flex" href=""><img class="h-full mr-5" src="images/icon-todo.svg" alt=""> Todo list</a>
+            <a class="flex" href=""><img class="h-full mr-5" src="images/icon-planning.svg" alt=""> Planing</a>
+          </div>
+        </div>
+ 
+        <div class="dropdown flex ml-20">
+          <div class="drop-btn flex">
+            <p>Company</p>
+            <img class="h-2 m-auto" src="images/icon-arrow-down.svg" alt="">
+          </div>
+          <div class="drop-content shadow-xl">
+            <a href="">History</a>
+            <a href="">Our Team</a>
+            <a href="">Blog</a>
+          </div>
+        </div>
+
+        <div class="nav ml-10">
+          <p><a href="">Career</a></p>
+        </div>
+
+        <div class="nav ml-10">
+          <p><a href="">About</a></p>
+        </div>
+
       </div>
       <div class="right flex">
         <p class=" text-slate-500 font-medium mr-5 m-auto hover:text-black"> <a href="">Login</a> </p>
@@ -56,4 +88,6 @@
   </div>
 
 </body>
+
+<script src="app.js"></script>
 </html>
